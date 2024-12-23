@@ -380,6 +380,7 @@ class FArchiveReader:
                 "value": values,
             }
         elif type_name == "ByteProperty":
+            print(self)
             value = {
                 "value": self.byte(),
             }
