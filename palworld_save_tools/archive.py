@@ -379,9 +379,9 @@ class FArchiveReader:
                 "id": _id,
                 "value": values,
             }
-        elif type_name == "ByteProperty":
-            value = {
-            }
+        # elif type_name == "ByteProperty":
+        #     value = {
+        #     }
         else:
             raise Exception(f"Unknown type: {type_name} ({path})")
         value["type"] = type_name
