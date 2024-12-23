@@ -379,8 +379,10 @@ class FArchiveReader:
                 "id": _id,
                 "value": values,
             }
-        # else:
-        #     raise Exception(f"Unknown type: {type_name} ({path})")
+        elif type_name == "ByteProperty":
+            value = self.byte()
+        else:
+            raise Exception(f"Unknown type: {type_name} ({path})")
         value["type"] = type_name
         return value
 
