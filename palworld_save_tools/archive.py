@@ -379,8 +379,8 @@ class FArchiveReader:
                 "id": _id,
                 "value": values,
             }
-        else:
-            raise Exception(f"Unknown type: {type_name} ({path})")
+        # else:
+        #     raise Exception(f"Unknown type: {type_name} ({path})")
         value["type"] = type_name
         return value
 
